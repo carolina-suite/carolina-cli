@@ -8,7 +8,7 @@ This is the CLI that simply fetches templates from this GitHub organization.
 
 ## Installation #
 
-`npm i -g carolina-suite/carolina`
+`npm i -g carolina-suite/carolina-cli`
 
 ## Usage #
 
