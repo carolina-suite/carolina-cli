@@ -22,4 +22,4 @@ the title of the given `projectName` argument.
 Possible templates:
 
 * [`node-server`](https://github.com/carolina-suite/node-server-start): NodeJs project for MongoDb, Mongoose ODM, Fastify web server, and ReactJs.
-* [`static-site`](https://github.com/carolina-suite/static-site): NodeJs static site generator with themes in Pug.
+* [`static-site`](https://github.com/carolina-suite/static-site-start): NodeJs static site generator with themes in Pug.
