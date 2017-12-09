@@ -4,18 +4,18 @@ var path = require('path');
 
 var Git = require('simple-git');
 
-var templateList = require('./template-list');
+var templates = require('./template-list');
 
 module.exports = function(args) {
 
-  if (templateList.indexOf(args.templateName) == -1) {
+  if (!templates.obj.hasOwnProperty(args.templateName)) {
     console.log("Not a valid template name. Options are:");
-    console.log(templateList);
+    console.log(templates.list);
     process.exit();
   }
 
   var git = Git(process.cwd());
-  git.clone(`https://github.com/carolina-suite/${args.templateName}-start`,
+  git.clone(`https://github.com/carolina-suite/${templates.obj[args.templateName]}`,
     path.resolve(process.cwd(), args.projectName), function() {
       fs.removeSync(path.resolve(process.cwd(), args.projectName, '.git'))
     }
